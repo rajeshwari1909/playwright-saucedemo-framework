@@ -1,0 +1,19 @@
+{
+  "name": "playwright-saucedemo-framework",
+  "version": "1.0.0",
+  "description": "Interview-ready Playwright automation framework for SauceDemo",
+  "main": "playwright.config.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:regression": "npx playwright test --grep @regression",
+    "report": "npx playwright show-report",
+    "codegen": "npx playwright codegen https://www.saucedemo.com/"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "dotenv": "^16.4.7"
+  }
+}
